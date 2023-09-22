@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+%center-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+body {
+    height: 100vh;
+    @extend %center-elements;
+    flex-direction: column;
+}
+
+@mixin changible_style($width, $padding, $border, $b_bottom, $outline, $f_size) {
+    width: $width;
+    padding: $padding;
+    border: $border;
+    border-bottom: $b_bottom;
+    outline: $outline;
+    font-size: $f_size;
+}
+
+.b_bottom {
+    @include changible_style(400px, 10px 2px, none, 2px solid rgba(128, 128, 128, 0.332), none, 20px);
+}
+
+.dotted {
+    @include changible_style(400px, 10px 2px, none, 2px dotted rgba(128, 128, 128, 0.332), none, 20px);
+}
+
+.b_bottom:focus {
+    border-bottom: 3px solid green;
+}
+
+.dotted:focus {
+    border-bottom: 4px dotted green;
+}

@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+body {
+  height: 100vh;
+  flex-direction: column;
+}
+
+.b_bottom {
+  width: 400px;
+  padding: 10px 2px;
+  border: none;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.332);
+  outline: none;
+  font-size: 20px;
+}
+
+.dotted {
+  width: 400px;
+  padding: 10px 2px;
+  border: none;
+  border-bottom: 2px dotted rgba(128, 128, 128, 0.332);
+  outline: none;
+  font-size: 20px;
+}
+
+.b_bottom:focus {
+  border-bottom: 3px solid green;
+}
+
+.dotted:focus {
+  border-bottom: 4px dotted green;
+}/*# sourceMappingURL=styles.css.map */
